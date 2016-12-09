@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="DWSettingsProvider">
+    <option name="passwordKey" value="dd9dbc92-1c6c-43d3-8736-4c69c465f7c5" />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="OCR-Angular node_modules" level="project" />
+  </component>
+</module>

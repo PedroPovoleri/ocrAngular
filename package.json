@@ -1,0 +1,37 @@
+{
+  "name": "ocrangular",
+  "version": "1.0.0",
+  "description": "Ocr For angular Client",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroPovoleri/ocrAngular.git"
+  },
+  "keywords": [
+    "OCR",
+    "angularjs",
+    "tesserect-ocr",
+    "nodejs",
+    "express"
+  ],
+  "author": "Pedro Povoleri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroPovoleri/ocrAngular/issues"
+  },
+  "homepage": "https://github.com/PedroPovoleri/ocrAngular#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-fileupload": "0.0.5",
+    "fs": "0.0.1-security",
+    "gm": "^1.23.0",
+    "mongoose": "^4.7.1",
+    "morgan": "^1.7.0",
+    "node-tesseract": "^0.2.7",
+    "path": "^0.12.7"
+  }
+}
