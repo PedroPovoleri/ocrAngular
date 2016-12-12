@@ -6,38 +6,10 @@
     <br/>
 
     <div>
-        <ul>
-            <li ng-repeat="file in filesGet">
-                <a ng-click="callCve(file._id)" class="btn-link fileName" id="btnCve"><span class="space-right2">{{file.name}}</span></a>
-                <label class="badge">{{file.dtUpld | date:'dd/MM/yyyy'}}</label>
-            </li>
-        </ul>
+            <span ng-model="file">
+                <textarea  class="btn-link fileName" id="btnCve" value ="{{file.item}}"></textarea>
+            </span>
     </div>
-
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Impact</th>
-            <th>Exploit Level</th>
-            <th>CVSS2</th>
-            <th>CVSS base</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr ng-repeat="cve in cves" my-element="cve">
-            <td>{{ cve.name }}</td>
-            <td>{{ cve.impact }}</td>
-            <td>{{ cve.exploitLvl }}</td>
-            <td>{{ cve.CVSS2 }}</td>
-            <td>{{ cve.base }}</td>
-        </tr>
-        </tbody>
-    </table>
-    <hc-pie-chart title="Browser usage" data="callCve">Placeholder for pie chart</hc-pie-chart>
-
-
-   </div>
 </div>
 
 

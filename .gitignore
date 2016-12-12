@@ -38,3 +38,4 @@ jspm_packages
 .idea/workspace.xml
 
 public/bower_components/
+/server/route/temp/
