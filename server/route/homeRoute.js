@@ -36,22 +36,16 @@ router.get('/', function(req, res) {
             if(err)
                 return console.log(err);
             console.log("The file was saved!");
-
-        gm(targetPath).monochrome().write(targetPath, function(err){
-                if(err)
-                    console.log(err);
-               console.log(text);
-               var file = {
-                   item:String
-               };
-                file.item = text;
-               res.send(file);
-
-               })
-           })
+            if(err)
+                console.log(err);
+            console.log(text);
+            var file = {
+                item:String
+            };
+            file.item = text;
+            res.send(file);        
+           });
         });
     }
-
-
 });
 module.exports = router;
