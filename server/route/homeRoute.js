@@ -29,21 +29,19 @@ router.get('/', function(req, res) {
 
     if (req.files != null || req.files != undefined) {
         var targetPath =   __dirname + "\\temp\\"+ req.files.arq.name;
-        tesseract.process(targetPath, options, function(err, text) {
-        if(err)
-             console.error(err);
         fs.writeFile(targetPath ,req.files.arq.data, function(err) {
             if(err)
                 return console.log(err);
             console.log("The file was saved!");
-            if(err)
-                console.log(err);
-            console.log(text);
-            var file = {
-                item:String
-            };
-            file.item = text;
-            res.send(file);        
+            tesseract.process(targetPath, options, function(TesseractErr, text) {
+                if(TesseractErr)
+                     console.error(err);
+                console.log(text);
+                var file = {
+                    item:String
+                };
+                file.item = text;
+                res.send(file);        
            });
         });
     }
